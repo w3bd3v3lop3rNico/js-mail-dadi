@@ -7,3 +7,7 @@
     - Inizializzare un ciclo per verificare se la mail inserita corrisponde o no al nostro array
 
 - Generare un messaggio appropriato in base alla verifica
+
+# Dadi
+
+- 
