@@ -10,4 +10,6 @@
 
 # Dadi
 
-- 
+- Generare un numero random da 1 a 6 per il giocatore e per il computer
+- Confrontare i due risultati
+- Decretare il vincitore
