@@ -9,18 +9,19 @@ const btnPlayDOMElemnt = document.querySelector(".play").addEventListener('click
 
     const comRandomNr = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
     const gamblerRandomNr = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
-    console.log(minNumber, maxNumber, comRandomNr, gamblerRandomNr)
+    // console.log(comRandomNr, gamblerRandomNr)
 
-    let message 
+    let message = "pareggio"
     // - Confrontare i due risultati
     if (comRandomNr > gamblerRandomNr) {
     message = "computer win"
     } else if (comRandomNr < gamblerRandomNr) {
     message = "you win"
-    } else {
-    message = "parità"
-    }
-    console.log(message)
+    } 
+    // else {
+    // message = "parità"
+    // }
+    console.log(message, comRandomNr, gamblerRandomNr)
     // - Decretare il vincitore
     const resultPlayDOMElement = document.getElementById('result')
     resultPlayDOMElement.innerHTML = message
