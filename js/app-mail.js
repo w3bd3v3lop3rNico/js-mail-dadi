@@ -18,6 +18,7 @@ const userMail = prompt("inserisci la tua mail");
 const arrayLength = mailAddresses.length;
 console.log(arrayLength);
 
+    // - Dichiarare una variabile mailFound = false
 let message = "mail errata";
 let mailFound = false;
 
@@ -26,6 +27,7 @@ let mailFound = false;
 for ( let i = 0; i < arrayLength; i++) {
     const currentMail = mailAddresses[i]
     console.log(i, currentMail)
+    console.log(userMail === currentMail)
 
     // se la user mail è uguale a una delle mail nel ciclo
     if (userMail === currentMail) {
