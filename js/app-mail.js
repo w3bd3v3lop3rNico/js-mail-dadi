@@ -19,21 +19,29 @@ const arrayLength = mailAddresses.length;
 console.log(arrayLength);
 
 let message = "mail errata";
+let mailFound = false;
+
 
     // - Inizializzare un ciclo per verificare se la mail inserita corrisponde o no al nostro array
-for (i = 0; i < arrayLength; i++) {
+for ( let i = 0; i < arrayLength; i++) {
     const currentMail = mailAddresses[i]
     console.log(i, currentMail)
+
     // se la user mail è uguale a una delle mail nel ciclo
     if (userMail === currentMail) {
         message = "mail corretta"
-    } else{
-
+        mailFound = true
+    } else {
+        
     }
 }
-
-
 // - Generare un messaggio appropriato in base alla verifica
-console.log(message)
+if (mailFound === true) {
+    console.log("mail corretta")
+} else {
+    console.log("mail errata")
+}
+console.log(mailFound)
+// console.log(message)
 const messageDOMElement = document.getElementById("message")
 messageDOMElement.innerHTML = message
